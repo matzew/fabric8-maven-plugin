@@ -34,7 +34,7 @@ public class ThorntailGenerator extends JavaExecGenerator {
     private static final transient Logger LOG = LoggerFactory.getLogger(ThorntailGenerator.class);
 
     public ThorntailGenerator(GeneratorContext context) {
-        super(context, "thorntail");
+        super(context, "thorntail-v4");
     }
 
     @Override
