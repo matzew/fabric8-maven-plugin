@@ -39,7 +39,7 @@ public class ThorntailGenerator extends JavaExecGenerator {
 
     @Override
     public boolean isApplicable(List<ImageConfiguration> configs) {
-        return shouldAddImageConfiguration(configs) && MavenUtil.hasPlugin(getProject(), "io.thorntail:thorntail-maven-plugin");
+        return shouldAddImageConfiguration(configs) && MavenUtil.hasDependency(getProject(), "io.thorntail", "thorntail-kernel");
     }
 
     @Override
